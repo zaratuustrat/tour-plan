@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CAAG;;AAE3B,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,oBAAoB;CAAG",
+    "sources": [
+        "../tour-plan/sass/style.sass",
+        "../tour-plan/sass/_variables.sass",
+        "../tour-plan/sass/_settings.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
