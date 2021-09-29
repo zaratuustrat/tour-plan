@@ -510,7 +510,8 @@ template {
 }
 
 @media (max-width: 768px) {
-  .container max-width 576px {
+  .container {
+    max-width: 576px;
     width: 92%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
@@ -544,9 +545,22 @@ template {
   }
 }
 
-@media (max-width: 579px) {
+@media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 320px;
+  }
+  .navbar-top {
+    margin: 0;
+  }
+  .logo__name {
+    font-size: 13px;
+    line-height: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
