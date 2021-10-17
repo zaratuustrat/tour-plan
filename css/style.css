@@ -1118,7 +1118,14 @@ template {
 .footer {
   background: #0a223d;
   color: #ffffff;
-  padding: 108px 0 48px 0;
+  padding: 108px 0 46px 0;
+}
+
+.footer-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(250px, 1fr));
 }
 
 .footer__ul {
@@ -1127,11 +1134,21 @@ template {
   list-style: none;
 }
 
-.footer__item {
+.footer__title {
   font-style: normal;
-  font-weight: bold;
+  foont-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+}
+
+.footer__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
 }
 
 .footer__link {
