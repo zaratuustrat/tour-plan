@@ -30,5 +30,8 @@ menuButton.addEventListener("click", function () {
     document
        .querySelector(".navbar-bottom")
        .classList.toggle("navbar-bottom_visible");
+    document
+       .querySelector(".body")
+       .classList.toggle("body-scroll-off");   
    });
    

@@ -1483,7 +1483,7 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 85px;
+    top: 70px;
     padding-top: 30px;
   }
   .navbar-bottom_visible {
@@ -1708,8 +1708,12 @@ template {
     max-width: 320px;
   }
   .navbar-top {
-    margin: 0;
+    width: 90%;
+    margin: auto;
     padding: 28px 0 28px 0;
+  }
+  .search__input {
+    max-width: 245px;
   }
   .logo__name {
     font-size: 13px;
@@ -1734,6 +1738,33 @@ template {
     margin: 0 auto 42px;
     font-size: 18px;
     line-height: 23px;
+  }
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 280px;
+  }
+  .footer__message {
+    width: 281px;
+    -ms-flex-preferred-size: inherit;
+        flex-basis: inherit;
+    margin-bottom: 15px;
+  }
+  .footer__info {
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
