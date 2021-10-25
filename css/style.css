@@ -3,7 +3,7 @@
           box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
   color: #333;
@@ -496,6 +496,10 @@ template {
   line-height: 18px;
   color: #333;
   margin-left: 18px;
+}
+
+.body-scroll-off {
+  overflow: hidden;
 }
 
 .breadcrumb-list {
@@ -1751,6 +1755,10 @@ template {
         -ms-flex-align: baseline;
             align-items: baseline;
     width: 280px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
   }
   .footer__message {
     width: 281px;
