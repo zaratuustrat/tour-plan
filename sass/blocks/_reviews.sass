@@ -11,36 +11,36 @@
   &-slider
     &__item
       position: relative
-      background-color: #fff
-      border-radius: 8px
       display: flex
       flex-direction: column
       align-items: center
       max-width: 730px
       margin: 45px auto 0
+      background-color: #fff
+      border-radius: 8px
       padding: 0 62px 30px
-      &:before
-        content: ''
+      &::before
+        content: ""
         position: absolute
-        width: 70px
-        height: 47px
-        background-image: url(../img/quote-left.svg)  
-        background-repeat: no-repeat
         left: 62px
-        top: 13px 
-      &:after
-        content: ''
-        position: absolute
+        top: 13px
         width: 70px
         height: 47px
-        background-image: url(../img/quote-right.svg)  
+        background-image: url(../img/quote-left.svg)
         background-repeat: no-repeat
+      &::after
+        content: ""
+        position: absolute
         right: 62px
-        top: 118px 
+        top: 118px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
     &__button
       position: absolute
       top: 50%
-      transforms: transateY(-50%)
+      transform: translateY(-50%)
       width: 30px
       height: 30px
       background-repeat: no-repeat
@@ -51,13 +51,11 @@
       cursor: pointer
       z-index: 99
       &--prev
+        background-image: url(../img/arrow-prev-secondary.svg)
         left: 0
-        background-image: url(../img/arrow-left.svg)
       &--next
-        right: 0 
-        background-image: url(../img/arrow-right.svg)
-      
-        
+        background-image: url(../img/arrow-next-secondary.svg)
+        right: 0
     &__profile
       display: flex
       flex-direction: column
@@ -68,9 +66,9 @@
       width: 90px
       height: 90px
       border-radius: 50%
-      object-fit: cover 
+      object-fit: cover
+      margin-bottom: 9px
     &__username
-      font-style: normal
       font-weight: bold
       font-size: 12px
       line-height: 15px
@@ -80,7 +78,7 @@
       font-style: normal
       font-weight: normal
       font-size: 10px
-      line-height: 13px  
+      line-height: 13px
       margin-bottom: 4px
     &__rating
       display: flex
@@ -91,10 +89,5 @@
       font-weight: normal
       font-size: 12px
       line-height: 160%
-      text-align: justify  
-      margin: 0 auto
-      color: #333333
-      
-
-    
-   
+      text-align: justify
+      margin: auto
