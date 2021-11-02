@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet"  href="css/swiper-bundle.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
@@ -13,7 +14,7 @@
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo" data-aos="flip-left">
             <img src="img/horizont-logo.svg" alt="logo: Best Tour Plan" class="logo__image">
           </a>
 
@@ -92,11 +93,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
-                <img src="img/star.svg" alt="star">
-                <img src="img/star.svg" alt="star">
-                <img src="img/star.svg" alt="star">
-                <img src="img/star.svg" alt="star">
-                <img src="img/star.svg" alt="star">
+                <img src="img/star.svg" alt="star" data-aos="fade-right">
+                <img src="img/star.svg" alt="star" data-aos="flip-left">
+                <img src="img/star.svg" alt="star" data-aos="zoom-in">
+                <img src="img/star.svg" alt="star" data-aos="flip-right">
+                <img src="img/star.svg" alt="star" data-aos="fade-left">
               </div>
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -107,7 +108,7 @@
           <div
            data-togle="modal"
            data-href="#rating-modal"
-            class="rating hotel-info__rating">
+            class="rating hotel-info__rating" data-aos="fade-left">
             <span class="rating__text">User Rattings</span>
             <span class="rating__countainer">4.5/5</span>
           </div>
@@ -308,25 +309,25 @@
             <h2 class="activities__title">Other Activities</h2>
             <div class="activities-wrapper">
 
-              <div class="card activities__card">
+              <div class="card activities__card" data-aos="fade-up">
                 <img src="img/activiti-1.jpg" alt="The curious corner of chamarel" class="card__image">
                 <h3 class="card__title">The curious corner of chamarel</h3>
                 <button data-togle="modal" data-href="#rating-modal" class="card__button">Book Now</button>
               </div>
                 <!-- /.card-->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-down">
                   <img src="img/activiti-2.jpg" alt=" Gymkhana club golf course" class="card__image">
                   <h3 class="card__title"> Gymkhana club golf course</h3>
                   <button data-togle="modal" data-href="#rating-modal" class="card__button">Book Now</button>
                 </div>
                   <!-- /.card-->
-                  <div class="card activities__card">
+                  <div class="card activities__card" data-aos="fade-down">
                     <img src="img/activiti-3.jpg" alt=" Tamarind falls hiking trip - full day" class="card__image">
                     <h3 class="card__title"> Tamarind falls hiking trip - full day</h3>
                     <button data-togle="modal" data-href="#rating-modal" class="card__button">Book Now</button>
                   </div>
                     <!-- /.card-->
-                    <div class="card activities__card">
+                    <div class="card activities__card" data-aos="fade-up">
                       <img src="img/activiti-4.jpg" alt="The blue marine discovery quest" class="card__image">
                       <h3 class="card__title">The blue marine discovery quest</h3>
                       <button data-togle="modal" data-href="#rating-modal" class="card__button">Book Now</button>
@@ -340,7 +341,7 @@
         <footer class="footer">
           <div class="container">
             <div class="footer-wrapper">
-              <a href="index.html"class="footer__logo">
+              <a href="index.html"class="footer__logo" data-aos="flip-left">
                 <img src="img/vertical-logo.svg" alt="Logo: Btst Tour Plan" >
               </a>
 
@@ -550,7 +551,8 @@
       <script src="js/jquery-3.6.0.min.js"></script>
       <script src="js/swiper-bundle.min.js"></script>
       <script src="js/jquery.validate.min.js"></script>
-      <script src="js/jquery.mask.min.js"></script>
+      <script src="js/jquery.maskedinput.js"></script>
+      <script src="js/aos.js"></script>
       <script src="js/main.js"></script>
       </body>
       
