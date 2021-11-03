@@ -31,7 +31,24 @@
   &-right
     display: flex
     flex-direction: column
-    justify-content: space-between  
+    justify-content: space-between 
+ 
+  &__button
+    &-back
+      display: block 
+      position: relative
+      width: 160px
+      text-align: center
+      text-decoration: none
+      &::before
+        content: ''
+        background: url('../img/arrow-back.svg') no-repeat 30% 50%
+        fill: white
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0   
   &-slider
     width: 728px
     height: 450px

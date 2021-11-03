@@ -57,6 +57,9 @@ function openModal() {
   var targetModal = $(this).attr("data-href");
   $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
   $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+  document
+       .querySelector(".body")
+       .classList.toggle("body-scroll-off");   
 }
 
 function closeModal(event) {
@@ -65,6 +68,9 @@ function closeModal(event) {
   var modalDialog = $(".modal__dialog");
   modalOverlay.removeClass("modal__overlay--visible");
   modalDialog.removeClass("modal__dialog--visible");
+  document
+       .querySelector(".body")
+       .classList.toggle("body-scroll-off");   
 }
 // Обработка форм
 $(".form").each(function() {

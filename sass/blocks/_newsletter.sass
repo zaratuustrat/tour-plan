@@ -32,13 +32,14 @@
       display: block
       font-size: 36px
       line-height: 45px
-      text-transform: uppercase  
+      text-transform: uppercase 
+    
 .subscribe
   position: relative
   width: 350px
   height: 55px
   border-radius: 4px
-  overflow: hidden
+ 
   &__input
     position: absolute
     width: 100%
@@ -63,4 +64,7 @@
     line-height: 15px
     background-color: $primary
     color: $light
-
+    border-radius: 0
+.subscribe label.invalid
+  position: absolute
+  top: 58px   

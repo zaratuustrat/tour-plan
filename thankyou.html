@@ -92,13 +92,14 @@
                     <div class="hotel-info">
                       <div class="hotel-info__text">
                         <div class="hotel-wrapper">
-            <h1 class="hotel-name hotel-info__name">Собщение отправлено!</h1>
+            <h1 class="hotel-name hotel-info__name">The message was sent!</h1>
           </div>
-          <p class="hotel-description hotel-info__description">Наш менеджер позвонит вам через 5 минут!</p>
+          <p class="hotel-description hotel-info__description">Our manager will call you in 5 minutes!</p>
         </div>
         <!-- /.hotel-info__text -->
       </div>
       <!-- /.hotel-info -->
+      <a href="index.html" class="button hotel__button-back">back</a>
     </div>
     <!-- /.container -->
   </section>
@@ -192,14 +193,33 @@
         <!-- /.footer-contacts-details-->
         <div class="footer__contacts-form">
           <h3 class="footer__title">Send us a message</h3>
-          <form action="send.php" method="post" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+
+          <form action="send.php" method="post" class="footer__form form ">
+            <div class="footer__input-group">
+             <input
+             type="text"
+              class="input footer__input"
+               placeholder="Your Full Name*" 
+               name="name"
+               required
+               minlength="2">
+            </div>
+
+            <div class="footer__input-group">
+             <input
+              type="tel"
+               class="input footer__input phone" 
+               placeholder="Phone Number*"
+                name="phone"
+                required>
+            </div>
+
             <textarea class="footer__message" placeholder="Message"
             name="message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
+
         </div>
        </div>
          <!-- /.footer-wrraper -->
