@@ -1392,6 +1392,16 @@ template {
   color: #BDBDBD;
 }
 
+.footer__contact-hours {
+  margin-top: 0;
+}
+
+.footer__contact-phone {
+  text-decoration: none;
+  color: #BDBDBD;
+  cursor: pointer;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
